@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      // withCredentials: true,
+      withCredentials: true,
       //adding headers to see if it works this way
       // headers: {
       //       'Content-Type': 'application/json',
@@ -25,11 +25,11 @@ const Home = () => {
       }
       else if(!res.data){
         console.log("home no res data supposed to go to login")
-        // window.location="/login"
+        window.location="/login"
       }
     }).catch(error => {
       console.log("home auth caught this error" ,error)
-      // window.location="/login"
+      window.location="/login"
     })
   },[])
   return(
