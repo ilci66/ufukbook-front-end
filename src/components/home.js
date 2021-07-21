@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      // withCredentials: true,
+      withCredentials: true,
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
       console.log("this is the res data" ,res.data);
