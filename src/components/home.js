@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      withCredentials: true,
+      // withCredentials: true,
       //adding headers to see if it works this way
       // headers: {
       //       'Content-Type': 'application/json',
