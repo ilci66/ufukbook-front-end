@@ -12,7 +12,20 @@ const Login = () => {
     if(loginUsername === "" || loginPassword === ""){
       return setMessage("Missing required fields")
     }
-    axios.post('https://ufukbook.herokuapp.com/login', data, {withCredentials: true})
+      //adding headers to see if it works this way
+      axios({
+        method:"POST",
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        data: JSON.stringify(data),
+        url:"https://ufukbook.herokuapp.com/login",
+      })
+        
+    // axios.post('https://ufukbook.herokuapp.com/login', 
+    //   data,
+    //   {withCredentials: true})
       .then(res => {
         console.log("get response from server")
         console.log(res.data)
