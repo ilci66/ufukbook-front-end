@@ -13,19 +13,21 @@ const Home = () => {
       // withCredentials: true,
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
-      console.log(res.data);
-      if(res.data) setUserInfo(res.data)
+      console.log("this is the res data" ,res.data);
+      if(res.data) {return setUserInfo(res.data)}
       else if(!res.data){
-        console.log("home no data supposed to go to login")
+        console.log("home no data supposed to go to login,", )
         // window.location="/login"
       }
     }).catch(error => {
-      console.log("home auth check" ,error)
+      console.log("home auth caught this error" ,error)
       // window.location="/login"
     })
   },[])
   return(
-    <div>{userInfo ? <Posts userInfo={userInfo}/> : "Loading..."}
+    <div>
+      {/* {userInfo ? <Posts userInfo={userInfo}/> : "Loading..."} */}
+      {userInfo ? "there is userinfo actually" : "Loading..."}
     
     </div>
   )
