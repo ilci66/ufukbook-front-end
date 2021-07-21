@@ -11,6 +11,11 @@ const Home = () => {
     axios({
       method: "GET",
       withCredentials: true,
+      //adding headers to see if it works this way
+      headers: {
+            'Content-Type': 'application/json',
+             Accept: 'application/json'
+      },
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
       console.log("this is the res>>", res ,"and this is the type of res data>>", typeof res.data);
