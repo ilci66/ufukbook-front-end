@@ -37,7 +37,7 @@ const Posts = ({userInfo}) => {
 
   const handleDelete = (e) => {
     // if(!userInfo) window.location = '/login'
-    console.log("userInfo ?")
+    console.log("userInfo ?", userInfo)
     // else if(userInfo.username == "ufuk"){
     if(userInfo.username == "ufuk"){
       console.log("user is ufuk")
