@@ -14,7 +14,7 @@ const Home = () => {
       //adding headers to see if it works this way
       headers: {
             'Content-Type': 'application/json',
-      //        Accept: 'application/json'
+             Accept: 'application/json'
       },
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
