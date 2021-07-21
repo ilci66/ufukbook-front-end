@@ -90,7 +90,7 @@ const Posts = ({userInfo}) => {
                 </Card.Body>
               </Card></Col>
               
-              }): allPosts && searchBy !== "" ? allPosts.filter(post => post.title.search(new RegExp(searchBy, "i")) >= 0).map(post => {
+              }): userInfo && allPosts && searchBy !== "" ? allPosts.filter(post => post.title.search(new RegExp(searchBy, "i")) >= 0).map(post => {
               return<Col className="flex"> <Card className="p-3 mx-auto" >
                 <Card.Img variant="top" src={post.image} />
                 <Card.Body >
