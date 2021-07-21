@@ -25,9 +25,9 @@ const Home = () => {
     })
   },[])
   return(
-    {userInfo && <div>
-    <Posts userInfo={userInfo}/>
-    </div>}
+    <div>{userInfo ? <Posts userInfo={userInfo}/> : "Loading..."}
+    
+    </div>
   )
 } 
 
