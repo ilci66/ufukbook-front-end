@@ -25,9 +25,9 @@ const Home = () => {
     })
   },[])
   return(
-    <div>
+    {userInfo && <div>
     <Posts userInfo={userInfo}/>
-    </div>
+    </div>}
   )
 } 
 

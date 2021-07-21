@@ -20,7 +20,7 @@ const Posts = ({userInfo}) => {
   useEffect(() => {
       axios.get('https://ufukbook.herokuapp.com/posts')
       .then(res => {
-        console.log(typeof res.data)
+        console.log(res.data)
         setAllPosts(res.data.slice(0).reverse())
       })
       .catch(error => {
