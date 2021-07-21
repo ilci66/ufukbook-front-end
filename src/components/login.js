@@ -15,12 +15,13 @@ const Login = () => {
       //adding headers to see if it works this way
       axios({
         method:"POST",
+        withCredentials: true,
         headers: {
           'Content-Type': 'application/json',
           Accept: 'application/json'
         },
         data: JSON.stringify(data),
-        url:"https://ufukbook.herokuapp.com/login",
+        url:"https://ufukbook.herokuapp.com/login"
       })
         
     // axios.post('https://ufukbook.herokuapp.com/login', 
