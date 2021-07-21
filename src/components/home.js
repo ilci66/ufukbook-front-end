@@ -14,7 +14,10 @@ const Home = () => {
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
       console.log("this is the res data" ,res.data);
-      if(res.data) {return setUserInfo(res.data)}
+      if(res.data) {
+        console.log(res.data)
+        return setUserInfo(res.data)
+      }
       else if(!res.data){
         console.log("home no data supposed to go to login,", )
         // window.location="/login"
