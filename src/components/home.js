@@ -13,7 +13,7 @@ const Home = () => {
       withCredentials: true,
       url: "https://ufukbook.herokuapp.com/auth",
     }).then((res) => {
-      console.log("this is the res data>>", res.data ,"and this is the type>>", typeof res.data);
+      console.log("this is the res>>", res ,"and this is the type of res data>>", typeof res.data);
       if(res.data) {
         console.log(res.data)
         return setUserInfo(res.data)
