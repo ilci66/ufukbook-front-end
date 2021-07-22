@@ -9,7 +9,7 @@ const About = () => {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "https://ufukbook.herokuapp.com/auth",
+      url: "https://enigmatic-garden-41083.herokuapp.com/auth",
     }).then((res) => {
       console.log(res.data);
       if(res.data) setUserInfo(res.data)

@@ -22,7 +22,7 @@ const Post = ({userInfo}) => {
           title: title,
         }
 
-        axios.post('https://ufukbook.herokuapp.com/post/create', data)
+        axios.post('https://enigmatic-garden-41083.herokuapp.com/post/create', data)
         // , {withCredentials: true})
         .then(res => {
           setErrorMessage("")

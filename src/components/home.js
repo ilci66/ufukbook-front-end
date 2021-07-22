@@ -16,7 +16,7 @@ const Home = () => {
             'Content-Type': 'application/json',
              Accept: 'application/json'
       },
-      url: "https://ufukbook.herokuapp.com/auth",
+      url: "https://enigmatic-garden-41083.herokuapp.com/auth",
     }).then((res) => {
       console.log("this is the res>>", res ,"and this is the type of res data>>", typeof res.data);
       if(res.data) {

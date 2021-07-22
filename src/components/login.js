@@ -22,10 +22,10 @@ const Login = () => {
       //   // },
       //   // data: JSON.stringify(data),
       //   data:data,
-      //   url:"https://ufukbook.herokuapp.com/login"
+      //   url:"https://enigmatic-garden-41083.herokuapp.com/login"
       // })
         
-    axios.post('https://ufukbook.herokuapp.com/login', data, {withCredentials: true})
+    axios.post('https://enigmatic-garden-41083.herokuapp.com/login', data, {withCredentials: true})
       .then(res => {
         console.log("get response from server")
         console.log(res.data)

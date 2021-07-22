@@ -19,7 +19,7 @@ const Register = () => {
         email: registerEmail
       },
       withCredentials: true,
-      url: "https://ufukbook.herokuapp.com/register",
+      url: "https://enigmatic-garden-41083.herokuapp.com/register",
     }).then((res) => {
       console.log(res)
       window.location="/login"

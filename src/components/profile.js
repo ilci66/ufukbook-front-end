@@ -13,7 +13,7 @@ const Profile = () => {
       axios({
         method: "GET",
         withCredentials: true,
-        url: "https://ufukbook.herokuapp.com/profile",
+        url: "https://enigmatic-garden-41083.herokuapp.com/profile",
       }).then((res) => {
         console.log(res.data);
         if(res.data) setData(res.data)

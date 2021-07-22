@@ -18,7 +18,7 @@ const Posts = ({userInfo}) => {
   const [liked, setLiked] = useState(undefined)
 
   useEffect(() => {
-      axios.get('https://ufukbook.herokuapp.com/posts')
+      axios.get('https://enigmatic-garden-41083.herokuapp.com/posts')
       .then(res => {
         console.log(res.data)
         setAllPosts(res.data.slice(0).reverse())
@@ -43,7 +43,7 @@ const Posts = ({userInfo}) => {
       console.log("user is ufuk")
       const data = {creator: userInfo.username, title:e.target.id}
       console.log(data)
-      axios.delete('https://ufukbook.herokuapp.com/delete', {data})
+      axios.delete('https://enigmatic-garden-41083.herokuapp.com/delete', {data})
         .then(res => {
           console.log(res)
           window.location.reload(false)
@@ -55,7 +55,7 @@ const Posts = ({userInfo}) => {
     }else{
       const data = {creator: userInfo.username, title:e.target.id}
       console.log(data)
-      axios.delete('https://ufukbook.herokuapp.com/delete', {data})
+      axios.delete('https://enigmatic-garden-41083.herokuapp.com/delete', {data})
         .then(res => {
           console.log(res)
           window.location.reload(false)

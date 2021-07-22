@@ -8,7 +8,7 @@ const NavBar = () => {
     axios({
       method: "GET",
       withCredentials: true,
-      url: "https://ufukbook.herokuapp.com/logout",
+      url: "https://enigmatic-garden-41083.herokuapp.com/logout",
     })
     .then(res => {
       console.log(res)
